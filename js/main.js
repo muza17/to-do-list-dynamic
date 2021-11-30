@@ -4,10 +4,17 @@ var todoButton = document.querySelector(".TDL__btn");
 var todoList = document.querySelector(".TDL__list");
 var sortOption = document.querySelector(".sort-todo")
 var savingArray = [];
+
 //listeners
+todoInput.keyup(function(event) {
+    if (event.keyCode === 13) {
+        todoButton.click();
+    }
+});
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener('click', deleteCheck);
 sortOption.addEventListener('click', sortTodo);
+
 
 //functions
 
