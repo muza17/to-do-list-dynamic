@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>to-do-list-dynamic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
-
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <div class="header__left">
+                <a href="www.google.com"><img src="./img/arrow-left-solid.svg" style="width: 22px; height: 22px;" alt="" class="header__arrow"></a>
+                <h2 class="header__heading">Muza's Todo list</h2>
+            </div>
+            <div class="header__right">
+                <img src="./img/check-solid.svg" style="width: 22px; height: 22px;" alt="" class="header__tick">
+                <div class="header__sort">
+                    <select name="sorting" class="sort-todo">
+                        <option value="all" selected>All</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncompleted">Uncompleted</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <!-- end of the header -->
+    </div>
+    <!-- section -->
+    <section class="TDL">
+        <div class="container__TDL container">
+           <form action="/" id="form" class="TDL__form">
+               <input type="text" id="input" class="TDL__input" placeholder="What have you planned?">
+               <button id="inputBtn" type="submit" class="TDL__btn">Add</button>
+           </form>
+           <div class="TDLwrap">
+               <ul class="TDL__list" id="list">
+                   <!-- here it goes js -->
+               </ul>
+           </div> 
+        </div>
+    </section>
+    <!-- end of the section -->
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

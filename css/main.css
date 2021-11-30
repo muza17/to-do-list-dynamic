@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -353,15 +354,16 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Varela Round', "Arial", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: linear-gradient(120deg, #f6d365, #ffa78f);
 }
 
 .container {
-  max-width: examplepx;
-  padding-left: examplepx;
-  padding-right: examplepx;
+  max-width: 1130px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -380,5 +382,178 @@ img {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  padding: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 61%;
+}
+
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__tick {
+  margin-right: 20px;
+}
+
+.header__sort .sort-todo {
+  border: none;
+  min-width: 10px;
+  padding: 5px 10px;
+  border: 2px solid #d88771;
+  background-color: white;
+  cursor: pointer;
+}
+
+form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form button {
+  padding: 5px;
+  color: #d88771;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+}
+
+form input {
+  padding: 8.7px;
+  color: #d88771;
+  font-size: 15px;
+  border: none;
+  background-color: white;
+}
+
+form input:focus {
+  outline: none;
+  border: #d88771 2px solid;
+}
+
+form button {
+  padding: 6px;
+  color: #d88771;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+form button:hover {
+  color: white;
+  background-color: #d88771;
+}
+
+.TDLwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TDL__list {
+  margin: 0;
+  padding: 0;
+  min-width: 50%;
+  list-style: none;
+}
+
+.TDL__todo {
+  margin: 5px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+}
+
+.TDL__todo-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 15px;
+}
+
+.TDL__todo-deleteBtn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.TDL__todo-checkBtn {
+  background: #49cc49;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.down {
+  -webkit-transform: translateY(80px) rotateZ(20deg);
+          transform: translateY(80px) rotateZ(20deg);
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

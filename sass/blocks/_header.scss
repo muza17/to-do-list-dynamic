@@ -1,0 +1,127 @@
+.header{
+    margin: 0;
+    padding: 0;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 61%;
+        
+    }
+    
+    &__right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    &__tick{
+        margin-right: 20px;
+    }
+    &__sort{
+        .sort-todo{
+            border: none;
+            min-width: 10px;
+            padding: 5px 10px;
+            border: 2px solid #d88771;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form button{
+    padding: 5px;
+    color: #d88771;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+form input{
+    padding: 8.7px;
+    color: #d88771;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+}
+form input:focus{
+    outline: none;
+   border: #d88771 2px solid;
+}
+form button{
+    padding: 6px;
+    color: #d88771;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+form button:hover{
+    color: white;
+    background-color: #d88771;
+}
+.TDLwrap{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TDL{
+    &__list{
+        margin: 0;
+        padding: 0;
+        min-width: 50%;
+        list-style: none;
+
+    }
+    &__todo{
+        margin: 5px;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all ease 0.7s;
+
+        &-item{
+            flex: 1;
+            padding: 0 15px;
+        }
+        &-deleteBtn{
+            background: #ff6f47;
+            color: white;
+            border: none;
+            padding: 20px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        &-checkBtn{
+            background: rgb(73,204,73);
+            color: white;
+            border: none;
+            padding: 20px;
+            font-size: 10px;
+            cursor: pointer;
+            
+        }
+        
+    }
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.down{
+    transform: translateY(80px) rotateZ(20deg);
+    opacity: 0;
+}
