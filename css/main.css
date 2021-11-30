@@ -412,6 +412,11 @@ img {
   min-width: 61%;
 }
 
+.header__heading {
+  margin: 0;
+  padding: 0;
+}
+
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,7 +464,7 @@ form button {
 }
 
 form input {
-  padding: 8.7px;
+  padding: 8.8px;
   color: #d88771;
   font-size: 15px;
   border: none;

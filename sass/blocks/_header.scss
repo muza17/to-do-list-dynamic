@@ -13,6 +13,10 @@
         min-width: 61%;
         
     }
+    &__heading{
+        margin: 0;
+        padding: 0;
+    }
     
     &__right{
         display: flex;
@@ -48,7 +52,7 @@ form button{
     background-color: white;
 }
 form input{
-    padding: 8.7px;
+    padding: 8.8px;
     color: #d88771;
     font-size: 15px;
     border: none;
