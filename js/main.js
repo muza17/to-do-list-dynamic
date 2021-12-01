@@ -6,17 +6,20 @@ var sortOption = document.querySelector(".sort-todo")
 var savingArray = [];
 
 //listeners
-todoInput.keyup(function(event) {
+
+todoInput.addEventListener('keyup', function(event){
+    event.preventDefault();
     if (event.keyCode === 13) {
         todoButton.click();
+        
     }
 });
-todoButton.addEventListener("click", addTodo);
+todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 sortOption.addEventListener('click', sortTodo);
 
 
-//functions
+//functions 
 
 //1)adding todos
 function addTodo(e){
